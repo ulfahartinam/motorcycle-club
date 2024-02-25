@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>HDCI - Motorcycle's Club Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+      <!-- Navbar start -->
+      <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#"
+                            class="text-white">Jl. Abdullah Syafei No.8, Kota Jakarta Selatan, Daerah Khusus Ibukota
+                            Jakarta</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#"
+                            class="text-white">harleydavidsonindonesia@club.org</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand">
+                    <div class="d-flex m-3 me-0">
+                        <img src="img/logohaha.jpg" alt=" Harley Davidson Club Logo" class="logo">
+                        <h1 class="text-primary display-6">Harley Davidson Club </h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profile</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="Profile.html" class="dropdown-item">Gambaran Umum</a>
+                                <a href="kata-pengantar.html" class="dropdown-item">Kata Pengantar</a>
+                                <a href="visi-misi.html" class="dropdown-item">Visi dan Misi</a>
+                                <a href="event.html" class="dropdown-item">Event</a>
+                                <a href="gallery.html" class="dropdown-item">Gallery Foto</a>
+                                <a href="klien-kami.html" class="dropdown-item">Klien Kami</a>
+                            </div>
+                        </div>
+                        <!--  <a href="shop.html" class="nav-item nav-link">  Profile</a> -->
+                        <a href="daftar-artikel.html" class="nav-item nav-link">Artikel</a>
+                        <a href="produk-kami.html" class="nav-item nav-link">Produk Kami</a>
+                        <a href="contact.html" class="nav-item nav-link">Kontak Kami</a>
+                        <a href="about-us.html" class="nav-item nav-link">About Us</a>
+                        <!-- <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="cart.html" class="dropdown-item">Cart</a>
+                                        <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                        <a href="404.html" class="dropdown-item">404 Page</a>
+                                    </div>
+                                </div>-->
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                            data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                class="fas fa-search text-primary"></i></button>
+                        <!-- <a href="#" class="position-relative me-4 my-auto">
+                                    <i class="fa fa-shopping-bag fa-2x"></i>
+                                    <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                                </a> -->
+                        <a href="#" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Gambaran Umum</h1>
+              <!-- <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Cart</li>
+            </ol> -->
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <!-- Cart Page Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <h5><b>Perjalanan Harley Davidson Club Indonesia</b></h5>
+                <center>
+                    <img src="img/perjalanan-HD.jpg" class="img-fluid rounded" style="width: 400px; height: 250px;" alt="">
+                </center>
+                <br/>
+                <div class="col-md-12 text-justify">
+                    <p>
+                        <p style="text-indent: 45px"> HDCI (Harley-Davidson Club Indonesia) dan penyelenggaraan Wingday Pangandaran terbilang erat kaitannya antara satu dengan yang lainnya.
+                        Sejarah masuknya unit motor Harley-Davidson asal Amerika Serikat tersebut ke Indonesia juga menentukan terbentuknya HDCI dan riwayat penyelenggaraan 
+                        Wingday Pangandaran. Ketika awal kemerdekaan Republik Indonesia atau Perang Dunia ke-II usai, Harley-Davidson (H-D) mulai dikenal masyarakat. 
+                        Unit yang ada saat itu merupakan peninggalan tentara sekutu dan Belanda di Indonesia. <br/></p>
+                        
+                        Pada umumnya, unit H-D yang beroperasi digunakan di lingkungan instansi militer dan kepolisian sebagai kendaraan dinas untuk tugas-tugas pengawalan. 
+                        Beberapa, juga digunakan di perkebunan-perkebunan eks Belanda yang ada di Pulau Jawa dan Sumatra. <br/>
+
+                        Berdasarkan pengalaman beberapa gelintir mereka yang pernah berdinas menggunakan Harley-Davidson tersebut, berkembang kemudian kebutuhan akan adanya 
+                        wadah bagi sekelompok pecinta motor dengan kesamaan hobi untuk memelihara dan mengendarai motor besar yang melegenda itu. <br/>
+                        <center>
+                            <img src="img/logo-1990.jpg" class="img-fluid rounded" style="width: 400px; height: 400px;" alt="">
+                        </center>
+                        <p><center><b>foto: Logo resmi penyelenggaraan Munas I Harley-Davidson Club Indonesia tahun 1990.</b></center></p><br/>
+
+                        <p style="text-indent: 45px">Maka mereka mulai mendirikan wadah atau perkumpulan dalam bentuk klub-klub, komunitas atau kelompok pencinta motor besar Harley-Davidson, 
+                        namun sifatnya parsial atau secara sendiri-sendiri sesuai domisili kelompok yang ada di kota-kota besar baik di Pulau Jawa seperti Jakarta, 
+                        Bandung, Semarang, Surabaya dan kota-kota besar lainnya diluar Pulau Jawa. <br/></p>
+
+                        <p style="text-indent: 45px">Di era tahun 1960-an para pecinta motor besar khususnya Harley-Davidson juga dibentuk. Mereka yang ada di Jakarta mendirikan klub Harley-Davidson 
+                        dengan nama Harley Davidson Club Djakarta (HCD), kemudian Harley Club Bandung (HCB), Harley Club Tjirebon (HCT), Harley Club Semarang (HCS), 
+                        serta klub-klub H-D yang tersebar di kota-kota lainnya di Indonesia. <br/></p>
+
+                        <p style="text-indent: 45px">Masing-masing klub Harley-Davidson memiliki intensitas kegiatan di tingkat lokal kota atau provinsi, termasuk HCB yang memiliki tradisi touring untuk 
+                        internal anggotanya, dengan rute tradisional Bandung-Pangandaran, dimana mereka yang berhasil menempuh perjalanan berat tersebut, berhak mendapatkan wing, 
+                        kegiatan ini kemudian dikenal dengan Wingday. <br/></p>
+
+                        Dari beberapa fakta sejarah, semua klub-klub daerah itu merupakan embrio dari terbentuknya organisasi Harley-Davidson Club Indonesia (HDCI) yang ada pada saat ini. <br/>
+
+                        Tahun 1966, perjalanan pertama HCB ke Pangandaran dengan tujuan membuat prasasti di batu Gua Rengganis di pesisir pantai selatan.<br/><br/>
+                        <center>
+                            <img src="img/foto-kegiatan-1990.jpg" class="img-fluid rounded" style="width: 400px; height: 400px;" alt="">
+                        </center>
+                        <p><center><b>foto: Suasana saat berlangsung Munas I HDCI di Gedung Wisma Cahaya Garuda, Bandung, 25-27 Mei 1990, 
+                            yang bermuara pada terbentuknya Harley Davidson Club Indonesia pada 28 Mei 1990</b></center></p><br/>
+                        
+                        Tahun 1968, perjalanan ke-dua HCB ke Pangandaran dan pembentukan kepanitian untuk terbentuknya HCI/Harley Club Indonesia serta rencana untuk pelaksanaan Wingday pertama.<br/> <br/>
+
+                        <p style="text-indent: 60px"><b>. Wingday I</b>, 25 Agustus 1973, Wingday I merupakan momentum perjalanan ke-tiga HCB ke Pangandaran,tempat sakral di mana penyelenggaraan Wingday selalu digelar hingga kini.<br/></p> 
+                        <p style="text-indent: 60px"><b>. Wingday II</b>, 17-19 November 1978 pada pada saat itu masih mempersiapkan terbentuknya HCI. <br/></p>
+                        <p style="text-indent: 60px"><b>. Wingday III</b>, 10-12 September 1982, juga masih mempersiapkan terbentuknya HCI yang belum juga terealisasi. <br/></p>
+                        <p style="text-indent: 60px"><b>. Wingday IV</b>, 4 Juni 1986, acara Wingday ke-IV dengan ketua Atma Sentani, yang terus menggodog realisasi terbentuknya HCI. <br/><br/></p>
+
+                        Tahun 1987, pembentukan HCI dimohonkan untuk dilaksanakan oleh HC Bogor, namun belum dapat terlaksana karena terhadang berbagai kendala.<br/><br/>
+                        Tahun 1990, seharusnya Wingday ke-V digelar, namun batal dan jadinya dialihkan menjadi momentum penting mewujudkan HCI menjadi HDCI (Harley-Davidson Club Indonesia), dengan tajuk Munas I HDCI.<br/><br/>
+                        Jadi, Tahun 1990 adalah tahun krusial, dimana HDCI terbentuk. Bandung adalah kota penting dan bersejarah yang tak dapat dipisahkan dari penyelenggaraan Wingday dan menyatunya penggila Harley-Davidson dalam satu wadah resmi HDCI.<br/><br/>
+
+                        Pascaterbentuk HDCI, Wingday digelar setiap 5-tahun sekali oleh HDCI Bandung. <br/>
+                        <p style="text-indent: 60px"><b>. Wingday V<br/>, diselenggarakan pada 1-3 Desember 1995</b></p>
+                        <p style="text-indent: 60px"><b>. Wingday VI</b>, diselenggarakan 15-16 April 2000</p> 
+                        <p style="text-indent: 60px"><b>. Wingday VII</b>, diselenggarakan 22-24 April 2005</p> 
+                        <p style="text-indent: 60px"><b>. Wingday VIII</b>, diselenggarakan 2-4 Juli 2010</p> 
+                        <p style="text-indent: 60px"><b>. Wingday IX</b>, diselenggarakan 10-11 April 2015</p>
+
+                        Tahun 2020 yang seharusnya adalah tahun penyelenggaraan Wingday ke X dibatalkan karena ditetapkannya Pandemi Covid-19. 
+                        <p style="text-indent: 60px"><b>. Wingday X</b> atau The 50th Golden Memorial Wingday 2023 penyelenggaraannya dilaksanakan 26-27 Mei 2023 berbarengan dengan perayaan Hari Jadi HDCI ke-33.</p>
+                        Kembali ke Musyawarah Nasional Harley Davidson Club Indonesia di Wisma Cahaya Garuda, Bandung 25-27 Mei 1990, menghasilkan keputusan yaitu membentuk organisasi sebagai wadah tunggal yang dinamakan Harley Davidson Club Indonesia (HDCI). <br/><br/>
+
+                        Ada sejumlah nama selain Atma Sentani yang juga berperan aktif dalam proses pembentukan HDCI, mereka di antaranya adalah, Dading Kalbuadi, Ibnu Soebroto, Suherman, Herman Sarens Sudiro, Indrodjojo Kusumonegoro dan beberapa tokoh lainnya dengan tingkat kepedulian yang tinggi terhadap perkembangan kegiatan bernuansa Harley-Davidson.<br/><br/>
+                        Sedangkan dari HCB sebagai tuan rumah Munas I, selain Atma Sentani ada pula nama Bambang Broto, Paul Banuara 'Coky' Silalahi, Budi Memory, Saulus Lacaden dan nama-nama lain yang ikut mendorong lahirnya HDCI.<br/><br/>
+                        Dari Musyawarah Nasional HDCI I/1990 ini, 17 klub HD Pengcab Jawa-Bali yang hadir, disepakati oleh 16 Pengcab melebur menjadi satu dalam wadah HDCI, sedangkan dari ISHD (Ikatan Sport Harley-Davidson) menentukan sikap berdiri sendiri dengan tetap mendukung eksistensi HDCI.<br/><br/>
+                        Maka HDCI sejatinya terlahir dari kegiatan Wingday, yang seharusnya penyelenggaraan Wingday ke-V kemudian dialihkan momentumnya menjadi Munas I HDCI.<br/>
+
+                        Jadi, Tahun 1990 adalah tahun krusial, dimana HDCI terbentuk. Bandung adalah kota penting dan bersejarah yang tak dapat dipisahkan dari terbentuknya HDCI. <br/><br/>
+                        Atma Sentani (Ketua HCB saat itu) sangat berperan bagi terbentuknya HDCI pada 1990. Sentani aktif mempersiapkan dan memfasilitasi pertemuan dan penyelenggaraan pembentukan HDCI di Bandung. <br/><br/>
+                        Terpilih kemudian <b>Ibnu Soebroto</b> yang menjabat sebagai Ketua HDCI di periode pertama dengan durasi yang berjalan untuk 5 tahun (1990-1995).<br/><br/>
+
+                        Kemudian periode berikutnya <b>Hindarto</b> (1995-2000) dan berpindah tongkat komando ke <b>Atma Sentani</b> (2001-2005). Namun jabatan Atma Sentani berlangsung 5 bulan karena ada masalah di internal HDCI.<br/><br/> 
+                        Periode selanjutnya, Ketua HDCI berpindah ke <b>Letjen TNI (Purn) R. Soeyono</b> (2006-2011), yang lantas dilanjutkan oleh <b>Komjen Pol Drs. Nanan Soekarna</b> yang saat itu Wakapolri, menjabat Ketua HDCI selama 2 periode (2011-2016 dan 2016-2021).<br/><br/>
+                        Setelah itu, Ketua HDCI beralih lagi ke tangan <b> Irjen Teddy Minahasa</b> (2021-2026), ketika dirinya menjabat Staf Ahli Manajemen (Sahlijemen) Kapolri.<br/><br/>
+
+                        Tidak bisa menggenapkan periode jabatannya hingga 2026 karena Teddy Minahasa tersandung kasus hukum, lantas diganti oleh <b>Plt Husdi Karyono</b> sebelum digelar Musyawarah Nasional Luar Biasa di Kuta Bali, 27-28 Januari 2023 yang kemudian memilih <b>H. Ahmad Sahroni</b> menjadi Ketua Umum HDCI Periode 2023-2028.<br/><br/>
+                        Sejalan dengan sejarah terbentuknya HDCI dari 1990 hingga kini, untuk level HDCI Bandung tercatat sejumlah personel penting yang menjabat sebagai Ketua HDCI Bandung. <br/><br/>
+                        <b>Atma Sentani</b>(Ketua HCB 1982 - 1990) berlanjut jadi Ketua HDCI Bandung yang pertama untuk Periode (1990 - 1993) yang dilanjutkan oleh <b>Ida Bagus Gumuruh</b>(1993-1998).<br/><br/>
+
+                        Setelah itu <b>Marius 'Wiwied' Widyarto</b> yang jadi Ketua HDCI Bandung Periode (1998-2004) lantas tongkat estafet diberikan kepada <b>Raden Ayi Agus Rudi</b> atau akrab disapa Papap Ayi sebagai Ketua HDCI Bandung Periode (2004-2011).<br/><br/>
+                        Dinamika di tubuh HDCI Bandung terus berkembang, setelah itu tampil <b>Jonni BS Nugroho</b> sebagai Ketua HDCI Bandung dua Periode (2011-2019) yang banyak menggelar event besar, termasuk di antaranya Wingday HDCI dan Bandung Bike Week.<br/><br/>
+                        Dari Jonni BS Nugroho tongkat kepemimpinan beralih ke <b>Glenarto</b> yang menjabat sebagai Ketua HDCI Bandung Periode (2019-hingga sekarang).
+                    </p>
+                </div>
+            <!--    <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Products</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/vegetable-item-3.png" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
+                                    </div>
+                                </th>
+                                <td>
+                                    <p class="mb-0 mt-4">Big Banana</p>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <div class="input-group quantity mt-4" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-md rounded-circle bg-light border mt-4" >
+                                        <i class="fa fa-times text-danger"></i>
+                                    </button>
+                                </td>
+                            
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/vegetable-item-5.jpg" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="" alt="">
+                                    </div>
+                                </th>
+                                <td>
+                                    <p class="mb-0 mt-4">Potatoes</p>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <div class="input-group quantity mt-4" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-md rounded-circle bg-light border mt-4" >
+                                        <i class="fa fa-times text-danger"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/vegetable-item-2.jpg" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="" alt="">
+                                    </div>
+                                </th>
+                                <td>
+                                    <p class="mb-0 mt-4">Awesome Brocoli</p>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <div class="input-group quantity mt-4" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4">2.99 $</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-md rounded-circle bg-light border mt-4" >
+                                        <i class="fa fa-times text-danger"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>-->
+               <!-- <div class="mt-5">
+                    <input type="text" class="border-0 border-bottom rounded me-5 py-3 mb-4" placeholder="Coupon Code">
+                    <button class="btn border-secondary rounded-pill px-4 py-3 text-primary" type="button">Apply Coupon</button>
+                </div>
+                <div class="row g-4 justify-content-end">
+                    <div class="col-8"></div>
+                    <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4">
+                        <div class="bg-light rounded">
+                            <div class="p-4">
+                                <h1 class="display-6 mb-4">Cart <span class="fw-normal">Total</span></h1>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <h5 class="mb-0 me-4">Subtotal:</h5>
+                                    <p class="mb-0">$96.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 me-4">Shipping</h5>
+                                    <div class="">
+                                        <p class="mb-0">Flat rate: $3.00</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-end">Shipping to Ukraine.</p>
+                            </div>
+                            <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+                                <h5 class="mb-0 ps-4 me-4">Total</h5>
+                                <p class="mb-0 pe-4">$99.00</p>
+                            </div>
+                            <button class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button">Proceed Checkout</button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!-- Cart Page End -->
+
+
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <!--<div class="col-lg-3"> -->
+                            <a href="#">
+                                <h1 class="text-primary mb-0">Harley Davidson Club Indonesia</h1>
+                                <p class="text-secondary mb-0">Kebersamaan, Kekeluargaan, Persaudaraan, Inklusif, Horizontal dan Sosial</p>
+                            </a>
+                        <!-- </div>-->
+                    </div>
+                </div>
+                <div class="row g-5">
+                   <!-- <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
+                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
+                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Kontak Kami</h4>
+                            <p>Jl. Abdullah Syafei No.8, RT.6/RW.2, Manggarai Sel., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</p>
+                            <p>
+                                <i class="fa fa-phone-alt">
+                                <span>(021) 1234 56789</span>
+                                </i>
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope">
+                                    harleydavidsonindonesia@club.org
+                                </i>
+                            </p>
+                            <p>
+                                <i class="bi bi-printer"></i>
+                                <span>(021) 1234 98765</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                            <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Shop details</a>
+                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Order History</a>
+                            <a class="btn-link" href="">International Orders</a>
+                        </div>
+                    </div> -->
+                   <!-- <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Email: Example@gmail.com</p>
+                            <p>Phone: +0123 4567 8910</p>
+                            <p>Payment Accepted</p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Harley Davidson Club Indonesia 2024</a>, All right reserved.</span>
+                    </div>
+                    <!--<div class="col-md-6 my-auto text-center text-md-end text-white"> -->
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
